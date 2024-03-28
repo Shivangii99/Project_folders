@@ -1,0 +1,405 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* background-color: black; */
+}
+:root{
+    --a:0;
+}
+.container{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    gap: 14px;
+    /* margin: 12px 6px; */
+}
+.left{
+    /* border: 4px solid red; */
+    width: 25vw;
+    height: 90vh;
+    margin: 10px 0px 0px 10px;
+}
+.upper-left{
+    height: 25vh;
+    background-color: rgb(20, 19, 19);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.lower-left{
+    height: calc(65vh - 10px);
+    background-color: rgb(20, 19, 19);
+    border-radius: 10px;
+}
+.lower-left h2{
+    color: rgb(214, 205, 205);
+    padding: 15px;
+    font-family: prompt,sans-serif;
+}
+.lower-left h2:hover{
+    color: white;
+    cursor:pointer;
+}
+.song-list ul{
+    padding: 10px 30px;
+    overflow: auto;
+}
+.song-list ul li{
+    display: flex;
+    padding-right: 15px;
+    /* gap: 32; */
+    justify-content: space-between;
+    list-style: decimal;
+    color: white;
+    font-family: prompt, sans-serif;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 6px;
+    margin: 8px 0px;
+    width: auto;
+    transition: all 0.5s ease-in-out;
+
+}
+.song-list ul li:hover{
+    cursor: pointer;
+    transform: scale(0.99);
+}
+.songInfo{
+    padding-left: 7px;
+}
+.right{
+    /* border: 4px solid violet; */
+    width: 75vw;
+    height: 90vh;
+    background-color: rgb(20, 19, 19);
+    margin: 10px 10px 0px 0px;
+    border-radius: 10px;
+    /* position: absolute; */
+    position: relative;
+}
+.nav-bar{
+    height: 8vh;
+    /* margin-right: 20px; */
+    background-color: rgb(8, 8, 8);
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.ham{
+    margin-left: 25px;
+    width: 30px;
+    visibility: hidden;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+.signup{
+    background-color: rgb(8,8,8);
+    color: rgb(131, 129, 129);
+    font-weight: 700;
+    /* text-decoration: none; */
+    border: none;
+    font-size: 16px;
+    font-family: prompt,sans-serif;
+}
+.login{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    max-height: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 20px;
+    padding: 8px;
+    font-family: prompt,sans-serif;
+}
+.signup:hover{
+    color: white;
+    cursor: pointer;
+}
+.login:hover{
+    background-color: rgb(214, 205, 205);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.UL{
+    display: flex;
+    gap: 145px;
+}
+.upper-left h2{
+    font-family: prompt,sans-serif;
+    color: white;
+    padding: 12px;
+    /* display: inline-block; */
+    /* width: auto; */
+}
+.upper-left .close{
+    display: none;
+    cursor: pointer;
+    /* width: 35px; */
+}
+.home{
+    display: flex;
+}
+.upper-left img{
+    /* display: inline-block; */
+    padding-left: 12px;
+}
+.upper-left h4{
+    color: white;
+    font-family: prompt,sans-serif;
+    padding-left: 20px;
+}
+.search{
+    display: flex;
+    margin-top: 20px;
+}
+.search h4{
+    color: rgb(214, 205, 205);
+    font-family: prompt,sans-serif;
+}
+.search h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+
+}
+.home h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.heading{
+    color: white;
+    font-family: prompt,sans-serif;
+    margin-top: 8px;
+}
+
+/* CARD */
+
+.card-group{
+    display: flex;
+    overflow: auto;
+    height: 455px;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* overflow: auto; */
+    height: 260px;
+    width: 205px;
+    background-color: rgb(27, 24, 24);
+    justify-content: center;
+    align-items: center;
+    margin: 15px ;
+    border-radius: 10px;
+    transition: all .8s ease-in-out;
+
+}
+.card:hover{
+    background-color: #333;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.image img{
+    height: 170px;
+    /* object-fit: contain; */
+    padding-top: 9px;
+    /* position: relative; */
+}
+.card h3{
+    color: white;
+    padding: 5px 0px;
+}
+.card p{
+    color: rgb(173, 155, 155);
+    padding: 8px 0px;
+    font-weight: 200;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+/* play-bar */
+
+.play{
+    background-color: white;
+    height: 50px;
+    width: 75%;
+    position: fixed;
+    bottom: 50px;
+    border-radius: 10px;
+}
+.play .controls{
+    filter: invert(1);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 18px;
+    margin-top: 10px;
+}
+.controls img:hover{
+    cursor: pointer;
+}
+
+.scroll-bar{
+    background-color: mediumaquamarine;
+    width: 74vw;
+    height: 10px;
+    /* margin-top: 1.4px; */
+    border-radius: 10px;
+    /* margin-bottom: 50px; */
+    position: fixed;
+    bottom: 49px;
+}
+.circle{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-color: rgb(25, 219, 219);
+    /* margin-bottom: 4px; */
+    padding-bottom: -15px;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.5s;
+}
+.song-detail{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0px 18px 0px 19px; */
+    position: relative;
+    margin: 0px 15px;
+    /* left: 8px; */
+    bottom: 18px;
+}
+.song-name{
+    color: black;
+    font-size: 20px;
+    /* font-style: bold; */
+    font-weight: 500;
+}
+.song-time{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: prompt,sans-serif;
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+}
+.footer p{
+    color: rgb(177, 159, 159);
+    font-size: 15px;
+    font-family: prompt,sans-serif;
+    width: 75vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 1020px) {
+    .left{
+        position: absolute;
+        left: -380px;
+        width: 315px;
+        z-index: 1;
+        /* position: fixed; */
+        height: 100vh;
+        /* transition: left 0.5s; */
+    }
+    .upper-left .close{
+        display: block;
+        z-index: 1;
+    }
+    .right{
+        width: 100vw;
+        /* position: relative; */
+    }
+    .ham{
+        visibility: visible;
+        cursor: pointer;
+    }
+    .card-group{
+        
+        justify-content: center;
+        align-items: center;
+        /* width: auto;*/
+         height: 360px; 
+    }
+    .card1{
+        /* margin-top: 350px; */
+    }
+    .card{
+        width: 363px;
+        height: 400px;
+    }
+    .image img{
+        width: 300px;
+        height: 230px;
+    }
+    .play{
+        height: 100px;
+        width: 97.5%;
+    }
+    .play .controls{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .scroll-bar{
+        width: 97%;
+    }
+    .song-name{
+        font-size: 13px;
+        width: 20px;
+    }
+    .song-time{
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width:1020px) and (min-width: 700px)
+{
+    .card-group{
+        height: 550px;
+    }
+}
+
+/* dark-themed scroll-bar */
+
+.content {
+    padding: 20px;
+    color: #fff; /* Text color for dark theme */
+    height: 150vh; /* Adjust the height based on your content */
+    overflow-y: scroll;
+}
+
+/* Custom scrollbar styles */
+/* Webkit (Chrome, Safari, newer versions of Opera) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555; /* Color of the scrollbar thumb */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333; /* Color of the scrollbar track */
+}
+
+/* Firefox */
+/* You might need to use !important to override Firefox's default styles */
+/* Example: background-color: #555 !important; */
+scrollbar-color: #555 #333;
+scrollbar-width: thin;
+
+
+  
